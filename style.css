@@ -1,0 +1,149 @@
+/* Configurações Gerais */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 { font-weight: 700; color: #0078D7; }
+
+/* Barra de Navegação */
+.myNavbar {
+    background-color: #001f3f !important;
+    border: none;
+    padding: 10px 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+/* Seção de Início (Hero) */
+#início {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 56, 120, 0.8)), url('https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?q=80&w=2071&auto=format&fit=crop'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 20px;
+    text-align: center;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 20px;
+}
+
+.line-short {
+    width: 100px;
+    border-top: 3px solid #0078D7;
+    margin: 20px auto;
+}
+
+/* Organização de Conteúdo */
+.section-padding {
+    padding: 80px 15px;
+    text-align: center;
+}
+
+.grey-bg { background-color: #f4f4f4; }
+
+.line {
+    height: 4px;
+    background-color: #0078D7;
+    width: 50px;
+    margin: 10px auto 30px auto;
+}
+
+.content-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 18px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.features-list li::before {
+    content: "➔";
+    position: absolute;
+    left: 0;
+    color: #0078D7;
+}
+
+/* Contêineres de Vídeo e Mapas */
+.iframe-container, .map-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+/* Rodapé / Contatos */
+.insta-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #E1306C;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.insta-link:hover {
+    transform: scale(1.1);
+    color: #833ab4;
+}
+
+.insta-link span {
+    font-size: 18px;
+    color: #333;
+    vertical-align: middle;
+}
+
+/* Ajustes para Telas de Celular (Responsividade) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* Títulos menores no celular */
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .profile {
+        width: 100px;
+        height: 100px;
+    }
+
+    #início {
+        padding: 80px 10px; /* Menos espaço interno no topo */
+    }
+
+    .section-padding {
+        padding: 40px 10px;
+    }
+
+    .iframe-container iframe {
+        height: 300px; /* Reduz a altura do vídeo/mapa no celular */
+    }
+}
